@@ -15,5 +15,5 @@ export class ProfileComponent{
   location: string = "Wylie, Texas";
   profileImg: string = "https://static-assets.codecademy.com/Courses/learn-angular/01-angular-introduction/images/profile-picture.jpg"
   linkedinUrl: string = "https://www.linkedin.com/in/it-whitaker";
-  githubUrl: string = "https://github_profile_url.com";
+  githubUrl: string = "https://github.com/abdklmw/";
 }

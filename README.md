@@ -1,59 +1,80 @@
-# Angular
+# Developer Portfolio
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.8.
+This is an Angular-based web application designed to showcase a developer's profile and projects. The application provides a clean, modern interface to display personal information, social media links, and a portfolio of projects with their respective statuses.
 
-## Development server
+## Features
 
-To start a local development server, run:
+- **Profile Section**: Displays the developer's name, role, location, and profile image, with a link to their LinkedIn profile.
+- **Projects Section**: Lists multiple projects, each with a name, description, and status (Completed or In Progress).
+- **Responsive Design**: Adapts to various screen sizes, ensuring usability on both desktop and mobile devices.
+- **Modern Styling**: Utilizes CSS custom properties, gradients, and hover effects for a visually appealing experience.
+- **Angular Components**: Built with standalone components for modularity and maintainability.
+- **Optimized Images**: Uses Angular's `NgOptimizedImage` for efficient image loading.
 
-```bash
-ng serve
-```
+## Project Structure
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+The project is organized into the following key files and components:
 
-## Code scaffolding
+### Components
+- **AppComponent** (`src/app/app.component.ts`): The root component that serves as the entry point, rendering the main layout and importing the `ProfileComponent`. It includes a title ("Developer Portfolio") and a styled layout with an Angular logo, social media links, and resource links.
+- **ProfileComponent** (`src/app/profile/profile.component.ts`): Displays the developer's profile information, including name, role, location, profile image, and a LinkedIn link.
+- **ProjectComponent** (`src/app/project/project.component.ts`): Renders a list of projects, each with a name, description, and status, styled as cards.
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+### Templates
+- **app.component.html**: Defines the main layout, including the Angular logo, a greeting with the app title, resource links (e.g., Angular Docs, Tutorials), and social media icons (GitHub, Twitter, YouTube). It uses CSS custom properties for gradients and responsive design.
+- **profile.component.html**: Structures the profile section with an image, name, role, location, and a LinkedIn button.
+- **project.component.html**: Uses Angular's `@for` directive to iterate over a list of projects, displaying each as a card with conditional styling based on project status.
 
-```bash
-ng generate component component-name
-```
+### Configuration
+- **app.config.ts**: Configures the application with zone change detection and router providers.
+- **app.routes.ts**: Defines the application's routes (currently empty, ready for expansion).
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+### Testing
+- **Spec Files**: Each component includes a corresponding `.spec.ts` file with basic unit tests to ensure the component is created successfully.
 
-```bash
-ng generate --help
-```
+## Getting Started
 
-## Building
+### Prerequisites
+- Node.js (v18 or later)
+- Angular CLI (v17 or later)
 
-To build the project run:
+### Installation
+1. Clone the repository:
+   ```
+   git clone https://github.com/abdklmw/Angular-dev-profile-app.git
+   cd developer-portfolio
+   ```
+2. Install dependencies:
+   ```
+   npm install
+   ```
+3. Run the development server:
+   ```
+   npm start
+   ```
+4. Open your browser and navigate to `http://localhost:4200`.
 
-```bash
-ng build
-```
+### Building for Production
+To create a production build:
+   ```bash
+   ng build
+   ```
+The output will be in the `dist/` directory.
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+## Usage
+- Update the `ProfileComponent` (`src/app/profile/profile.component.ts`) with your personal details, such as name, role, location, profile image URL, and social media links.
+- Modify the `projects` array in `ProjectComponent` (`src/app/project/project.component.ts`) to include your own projects, specifying the `id`, `name`, `description`, and `status`.
+- Customize the styles in the component-specific CSS files or the global styles in `app.component.html` to match your branding.
 
-## Running unit tests
+## Potential Future Enhancements
+I do not plan to make any future enhancements as this is just intended to be an example/learning project, but below are some potential updated that could be done.
+- Add routing to support multiple pages (e.g., Home, About, Projects).
+- Implement a backend service to fetch profile and project data dynamically.
+- Expand the social media links to include additional platforms.
+- Add animations for smoother transitions and interactions.
 
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
+## License
+This project is completely free for you to copy and modify as you desire.
 
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+## Acknowledgments
+- Built with [Angular](https://angular.dev/).
