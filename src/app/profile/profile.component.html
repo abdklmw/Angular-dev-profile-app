@@ -1,0 +1,9 @@
+<!-- profile.component.html -->
+<div class="profile">
+  <img [ngSrc]='profileImg' width='200' height='300' [alt]='name'/>
+  <h2>{{name}}</h2>
+  <p>{{role}} | {{location}}</p>
+  <div class="social-links">
+    <a class="social-button" [href]="linkedinUrl" target="_blank">LinkedIn</a>
+  </div>
+</div>
