@@ -7,7 +7,6 @@ This is an Angular-based web application designed to showcase a developer's prof
 - **Profile Section**: Displays the developer's name, role, location, and profile image, with a link to their LinkedIn profile.
 - **Projects Section**: Lists multiple projects, each with a name, description, and status (Completed or In Progress).
 - **Responsive Design**: Adapts to various screen sizes, ensuring usability on both desktop and mobile devices.
-- **Modern Styling**: Utilizes CSS custom properties, gradients, and hover effects for a visually appealing experience.
 - **Angular Components**: Built with standalone components for modularity and maintainability.
 - **Optimized Images**: Uses Angular's `NgOptimizedImage` for efficient image loading.
 
